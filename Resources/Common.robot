@@ -8,5 +8,5 @@ Begin Web Test
     Open Browser  about:blank  chrome
     # Maximize Browser Window
 
-End Web Test
+End Web Test s
     Close Browser
