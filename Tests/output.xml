@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.9.10 on win32)" generated="20220224 10:38:34.223" rpa="false" schemaversion="2">
+<suite id="s1" name="Amazon" source="C:\Devolopment\robot-scripts\amazon\Tests\amazon.robot">
+<test id="s1-t1" name="Logged out user can search for products">
+<kw name="Begin Web Test" library="Common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220224 10:38:34.582" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220224 10:38:34.582" endtime="20220224 10:38:36.277"/>
+</kw>
+<status status="PASS" starttime="20220224 10:38:34.581" endtime="20220224 10:38:36.278"/>
+</kw>
+<kw name="Search for Products" library="AmazonApp">
+<kw name="LandingPage.Load">
+<msg timestamp="20220224 10:38:36.289" level="FAIL">No keyword with name 'LandingPage.Load' found.</msg>
+<status status="FAIL" starttime="20220224 10:38:36.289" endtime="20220224 10:38:36.290"/>
+</kw>
+<kw name="LandingPage.Verify Page Loaded">
+<status status="NOT RUN" starttime="20220224 10:38:36.302" endtime="20220224 10:38:36.302"/>
+</kw>
+<kw name="TopNav.Search for Products">
+<status status="NOT RUN" starttime="20220224 10:38:36.311" endtime="20220224 10:38:36.311"/>
+</kw>
+<kw name="SearchResults.Verify Search Completed">
+<status status="NOT RUN" starttime="20220224 10:38:36.322" endtime="20220224 10:38:36.322"/>
+</kw>
+<status status="FAIL" starttime="20220224 10:38:36.281" endtime="20220224 10:38:36.324"/>
+</kw>
+<kw name="End Web Test" library="Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220224 10:38:36.326" endtime="20220224 10:38:38.594"/>
+</kw>
+<status status="PASS" starttime="20220224 10:38:36.325" endtime="20220224 10:38:38.594"/>
+</kw>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20220224 10:38:34.580" endtime="20220224 10:38:38.595">No keyword with name 'LandingPage.Load' found.</status>
+</test>
+<test id="s1-t2" name="Logged out user can view a product">
+<kw name="Begin Web Test" library="Common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220224 10:38:38.598" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220224 10:38:38.598" endtime="20220224 10:38:40.227"/>
+</kw>
+<status status="PASS" starttime="20220224 10:38:38.597" endtime="20220224 10:38:40.228"/>
+</kw>
+<kw name="Search for Products" library="AmazonApp">
+<kw name="LandingPage.Load">
+<msg timestamp="20220224 10:38:40.241" level="FAIL">No keyword with name 'LandingPage.Load' found.</msg>
+<status status="FAIL" starttime="20220224 10:38:40.240" endtime="20220224 10:38:40.241"/>
+</kw>
+<kw name="LandingPage.Verify Page Loaded">
+<status status="NOT RUN" starttime="20220224 10:38:40.254" endtime="20220224 10:38:40.254"/>
+</kw>
+<kw name="TopNav.Search for Products">
+<status status="NOT RUN" starttime="20220224 10:38:40.265" endtime="20220224 10:38:40.265"/>
+</kw>
+<kw name="SearchResults.Verify Search Completed">
+<status status="NOT RUN" starttime="20220224 10:38:40.278" endtime="20220224 10:38:40.279"/>
+</kw>
+<status status="FAIL" starttime="20220224 10:38:40.230" endtime="20220224 10:38:40.280"/>
+</kw>
+<kw name="Select Product from Search Results" library="AmazonApp">
+<status status="NOT RUN" starttime="20220224 10:38:40.282" endtime="20220224 10:38:40.282"/>
+</kw>
+<kw name="End Web Test" library="Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220224 10:38:40.284" endtime="20220224 10:38:42.562"/>
+</kw>
+<status status="PASS" starttime="20220224 10:38:40.283" endtime="20220224 10:38:42.562"/>
+</kw>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20220224 10:38:38.596" endtime="20220224 10:38:42.563">No keyword with name 'LandingPage.Load' found.</status>
+</test>
+<test id="s1-t3" name="Logged out user can add product to cart">
+<kw name="Begin Web Test" library="Common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220224 10:38:42.567" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220224 10:38:42.566" endtime="20220224 10:38:44.176"/>
+</kw>
+<status status="PASS" starttime="20220224 10:38:42.566" endtime="20220224 10:38:44.176"/>
+</kw>
+<kw name="Search for Products" library="AmazonApp">
+<kw name="LandingPage.Load">
+<msg timestamp="20220224 10:38:44.188" level="FAIL">No keyword with name 'LandingPage.Load' found.</msg>
+<status status="FAIL" starttime="20220224 10:38:44.188" endtime="20220224 10:38:44.188"/>
+</kw>
+<kw name="LandingPage.Verify Page Loaded">
+<status status="NOT RUN" starttime="20220224 10:38:44.196" endtime="20220224 10:38:44.197"/>
+</kw>
+<kw name="TopNav.Search for Products">
+<status status="NOT RUN" starttime="20220224 10:38:44.206" endtime="20220224 10:38:44.206"/>
+</kw>
+<kw name="SearchResults.Verify Search Completed">
+<status status="NOT RUN" starttime="20220224 10:38:44.219" endtime="20220224 10:38:44.219"/>
+</kw>
+<status status="FAIL" starttime="20220224 10:38:44.178" endtime="20220224 10:38:44.221"/>
+</kw>
+<kw name="Select Product from Search Results" library="AmazonApp">
+<status status="NOT RUN" starttime="20220224 10:38:44.230" endtime="20220224 10:38:44.230"/>
+</kw>
+<kw name="Add Product to Cart" library="AmazonApp">
+<status status="NOT RUN" starttime="20220224 10:38:44.230" endtime="20220224 10:38:44.230"/>
+</kw>
+<kw name="End Web Test" library="Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220224 10:38:44.232" endtime="20220224 10:38:46.507"/>
+</kw>
+<status status="PASS" starttime="20220224 10:38:44.231" endtime="20220224 10:38:46.507"/>
+</kw>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20220224 10:38:42.565" endtime="20220224 10:38:46.507">No keyword with name 'LandingPage.Load' found.</status>
+</test>
+<test id="s1-t4" name="Logged out user must sign in to check out">
+<kw name="Begin Web Test" library="Common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220224 10:38:46.511" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220224 10:38:46.511" endtime="20220224 10:38:48.375"/>
+</kw>
+<status status="PASS" starttime="20220224 10:38:46.510" endtime="20220224 10:38:48.375"/>
+</kw>
+<kw name="Search for Products" library="AmazonApp">
+<kw name="LandingPage.Load">
+<msg timestamp="20220224 10:38:48.387" level="FAIL">No keyword with name 'LandingPage.Load' found.</msg>
+<status status="FAIL" starttime="20220224 10:38:48.387" endtime="20220224 10:38:48.388"/>
+</kw>
+<kw name="LandingPage.Verify Page Loaded">
+<status status="NOT RUN" starttime="20220224 10:38:48.399" endtime="20220224 10:38:48.400"/>
+</kw>
+<kw name="TopNav.Search for Products">
+<status status="NOT RUN" starttime="20220224 10:38:48.409" endtime="20220224 10:38:48.409"/>
+</kw>
+<kw name="SearchResults.Verify Search Completed">
+<status status="NOT RUN" starttime="20220224 10:38:48.421" endtime="20220224 10:38:48.421"/>
+</kw>
+<status status="FAIL" starttime="20220224 10:38:48.378" endtime="20220224 10:38:48.423"/>
+</kw>
+<kw name="Select Product from Search Results" library="AmazonApp">
+<status status="NOT RUN" starttime="20220224 10:38:48.425" endtime="20220224 10:38:48.425"/>
+</kw>
+<kw name="Add Product to Cart" library="AmazonApp">
+<status status="NOT RUN" starttime="20220224 10:38:48.426" endtime="20220224 10:38:48.426"/>
+</kw>
+<kw name="Begin Checkout" library="AmazonApp">
+<status status="NOT RUN" starttime="20220224 10:38:48.426" endtime="20220224 10:38:48.427"/>
+</kw>
+<kw name="End Web Test" library="Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220224 10:38:48.429" endtime="20220224 10:38:50.679"/>
+</kw>
+<status status="PASS" starttime="20220224 10:38:48.428" endtime="20220224 10:38:50.679"/>
+</kw>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20220224 10:38:46.509" endtime="20220224 10:38:50.680">No keyword with name 'LandingPage.Load' found.</status>
+</test>
+<doc>This is some basic info about the whole suite</doc>
+<status status="FAIL" starttime="20220224 10:38:34.226" endtime="20220224 10:38:50.682"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="4" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="0" fail="4" skip="0" id="s1" name="Amazon">Amazon</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20220224 10:38:34.563" level="ERROR">Error in file 'C:\Devolopment\robot-scripts\amazon\Resources\AmazonApp.robot' on line 2: Resource file 'Resources\PO\LandingPage.robot' does not exist.</msg>
+<msg timestamp="20220224 10:38:34.566" level="ERROR">Error in file 'C:\Devolopment\robot-scripts\amazon\Resources\AmazonApp.robot' on line 3: Resource file 'Resources\PO\TopNav.robot' does not exist.</msg>
+<msg timestamp="20220224 10:38:34.569" level="ERROR">Error in file 'C:\Devolopment\robot-scripts\amazon\Resources\AmazonApp.robot' on line 4: Resource file 'Resources\PO\SearchResults.robot' does not exist.</msg>
+<msg timestamp="20220224 10:38:34.572" level="ERROR">Error in file 'C:\Devolopment\robot-scripts\amazon\Resources\AmazonApp.robot' on line 5: Resource file 'Resources\PO\Product.robot' does not exist.</msg>
+<msg timestamp="20220224 10:38:34.575" level="ERROR">Error in file 'C:\Devolopment\robot-scripts\amazon\Resources\AmazonApp.robot' on line 6: Resource file 'Resources\PO\Cart.robot' does not exist.</msg>
+<msg timestamp="20220224 10:38:34.578" level="ERROR">Error in file 'C:\Devolopment\robot-scripts\amazon\Resources\AmazonApp.robot' on line 7: Resource file 'Resources\PO\SignIn.robot' does not exist.</msg>
+</errors>
+</robot>

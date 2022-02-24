@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.9.10 on win32)" generated="20220221 13:47:17.118" rpa="false" schemaversion="2">
+<suite id="s1" name="Amazon" source="C:\Devolopment\robot-scripts\amazon\Tests\amazon.robot">
+<test id="s1-t1" name="Userm must sign in to check out">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http:\\www.amazon.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220221 13:47:17.408" level="INFO">Opening browser 'chrome' to base url 'http:\www.amazon.com'.</msg>
+<status status="PASS" starttime="20220221 13:47:17.408" endtime="20220221 13:47:33.053"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Amazon.com</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220221 13:47:33.054" endtime="20220221 13:47:33.217"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="twotabsearchtextbox"]</arg>
+<arg>Ferrari 458</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220221 13:47:33.218" level="INFO">Typing text 'Ferrari 458' into text field '//*[@id="twotabsearchtextbox"]'.</msg>
+<status status="PASS" starttime="20220221 13:47:33.217" endtime="20220221 13:47:33.673"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="nav-search-submit-button"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220221 13:47:33.674" level="INFO">Clicking button '//*[@id="nav-search-submit-button"]'.</msg>
+<status status="PASS" starttime="20220221 13:47:33.674" endtime="20220221 13:47:41.582"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>results for "Ferrari 458"</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220221 13:47:41.583" endtime="20220221 13:47:41.635"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="a-autoid-0-announce"]/span[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220221 13:47:41.635" level="INFO">Clicking element '//*[@id="a-autoid-0-announce"]/span[2]'.</msg>
+<status status="PASS" starttime="20220221 13:47:41.635" endtime="20220221 13:47:41.824"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="s-result-sort-select_4"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220221 13:47:41.826" level="INFO">Clicking element '//*[@id="s-result-sort-select_4"]'.</msg>
+<status status="PASS" starttime="20220221 13:47:41.826" endtime="20220221 13:47:42.318"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="nav-orders"]/span[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220221 13:47:42.338" level="INFO">Clicking element '//*[@id="nav-orders"]/span[2]'.</msg>
+<status status="PASS" starttime="20220221 13:47:42.337" endtime="20220221 13:47:47.832"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="ap_email"]</arg>
+<arg>dinko.frankic@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220221 13:47:47.833" level="INFO">Typing text 'dinko.frankic@gmail.com' into text field '//*[@id="ap_email"]'.</msg>
+<status status="PASS" starttime="20220221 13:47:47.833" endtime="20220221 13:47:48.072"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="continue"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220221 13:47:48.074" level="INFO">Clicking button '//*[@id="continue"]'.</msg>
+<status status="PASS" starttime="20220221 13:47:48.073" endtime="20220221 13:47:49.838"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="ap_password"]</arg>
+<arg>Hajduk5</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220221 13:47:49.839" level="INFO">Typing text 'Hajduk5' into text field '//*[@id="ap_password"]'.</msg>
+<status status="PASS" starttime="20220221 13:47:49.838" endtime="20220221 13:47:50.024"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="signInSubmit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220221 13:47:50.025" level="INFO">Clicking button '//*[@id="signInSubmit"]'.</msg>
+<status status="PASS" starttime="20220221 13:47:50.025" endtime="20220221 13:47:50.285"/>
+</kw>
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<arg>3s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" starttime="20220221 13:47:50.286" endtime="20220221 13:47:50.288"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220221 13:47:50.289" endtime="20220221 13:47:52.576"/>
+</kw>
+<doc>Some basic info about test</doc>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20220221 13:47:17.407" endtime="20220221 13:47:52.577"/>
+</test>
+<doc>This is some basic info about whole suite</doc>
+<status status="PASS" starttime="20220221 13:47:17.120" endtime="20220221 13:47:52.579"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Amazon">Amazon</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
